@@ -44,7 +44,7 @@ public class TC02 {
             String sonyXperiaPriceDetails = sonyXperiaPriceDetailsPage.getText();
 
             // 8. Compare the product prices from list and details page
-            Assert.assertNotEquals("Product price not match", sonyXperiaPriceList, sonyXperiaPriceDetails);
+            Assert.assertEquals("Product price not match", sonyXperiaPriceList, sonyXperiaPriceDetails);
         } catch (Exception e) {
             e.printStackTrace();
         }
